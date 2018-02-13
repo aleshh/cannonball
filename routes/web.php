@@ -11,9 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/beverages', function () {
+
+    $beverages = DB::table('beverages')->get();
+
+    return view('beverages.index', compact('beverages'));
 });
+
+Route::get('beverages/{id}', function($id){
+
+    $beverage = DB::table('beverages')->find($id);
+
+    return view('beverages.show', compact('beverage'));
+});
+
 
 Route::get('about', function() {
     return view('about');
