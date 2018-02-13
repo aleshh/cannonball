@@ -7,7 +7,7 @@
     <title>Cannonball</title>
 </head>
 <body>
-    <h1>Cannonball</h1>
-    <p><a href="/about">About</a></p>
+  <h1>About</h1>
+  <p><a href="/">Home</a></p>
 </body>
 </html>
