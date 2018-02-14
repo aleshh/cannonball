@@ -4,7 +4,7 @@ namespace Cannonball;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Beverages extends Model
+class Serving extends Model
 {
     //
 }

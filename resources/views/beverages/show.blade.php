@@ -13,6 +13,6 @@
   <h2>{{ $beverage->name }}</h2>
   <p>Category: {{ $beverage->category }}<br>
   Size: {{ $beverage->ounces }} oz.<br>
-  Alcohol: {{ $beverage->alcohol }}%</p>
+  Alcohol: {{ $beverage->strength }}%</p>
 </body>
 </html>

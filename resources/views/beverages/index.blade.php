@@ -12,7 +12,12 @@
 
     <ul>
         @foreach ($beverages as $beverage)
-            <li><a href="beverages/{{$beverage->id}}">{{ $beverage->name }}</a></li>
+            <li>
+                <a href="beverages/{{$beverage->id}}">
+                    {{ $beverage->name }}
+                    {{ $beverage->alcoholAmount() }}
+                </a>
+            </li>
         @endforeach
     </ul>
 </body>
