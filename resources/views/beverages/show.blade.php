@@ -8,11 +8,16 @@
 </head>
 <body>
 <h1>Cannonball</h1>
-    <p><a href="/beverages">Beverages</a> <a href="/about">About</a></p>
+  <p>
+    <a href="/beverages">Beverages</a> <a href="/about">About</a>
+  </p>
 
   <h2>{{ $beverage->name }}</h2>
-  <p>Category: {{ $beverage->category }}<br>
-  Size: {{ $beverage->size }} oz.<br>
-  Alcohol: {{ $beverage->strength }}%</p>
+
+  <p>
+    Category: {{ $beverage->category }}<br>
+    Size: {{ $beverage->size }} oz.<br>
+    Alcohol: {{ $beverage->strength }}%
+  </p>
 </body>
 </html>
