@@ -14,8 +14,8 @@
         @foreach ($beverages as $beverage)
             <li>
                 <a href="beverages/{{$beverage->id}}">
-                    {{ $beverage->name }}
-                    {{ $beverage->alcoholAmount() }}
+                    <strong>{{ $beverage->name }}</strong>
+                    ({{ $beverage->size * $beverage->strength / 100}} oz. of alcohol)
                 </a>
             </li>
         @endforeach

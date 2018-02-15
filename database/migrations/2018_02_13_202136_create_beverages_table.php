@@ -17,7 +17,7 @@ class CreateBeveragesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('category');
-            $table->decimal('ounces', 4, 1);  // total quantity
+            $table->decimal('size', 4, 1);  // total quantity in ounces
             $table->decimal('strength', 3, 1); // a percentage
             $table->timestamps();
         });

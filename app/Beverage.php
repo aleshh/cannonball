@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Beverage extends Model
 {
-    public function alcoholAmount() {
+    // public function alcoholAmount() {
 
-        return 10;
-    }
+    //     return static::where('id', '1')->get();
+    // }
 }
