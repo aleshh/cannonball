@@ -6,9 +6,11 @@
   <h2>{{ $beverage->name }}</h2>
 
   <p>
-    Category: {{ $beverage->category }}<br>
-    Size: {{ $beverage->size }} oz.<br>
-    Alcohol: {{ $beverage->strength }}%
+    <strong>Category:</strong> {{ ucfirst($beverage->category) }}<br>
+    <strong>Size:</strong> {{ $beverage->size }} oz.<br>
+    <strong>Alcohol:</strong> {{ $beverage->strength }}%<br>
+    ({{ $beverage->size * $beverage->strength / 100}} oz. of alcohol)
+
   </p>
 
 @endsection

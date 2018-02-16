@@ -7,12 +7,14 @@
     <title>Cannonball</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i');
+    /* @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i'); */
+    @import url('https://fonts.googleapis.com/css?family=Tillana:400,600,800');
+
 
     * {
       margin: 0;
       padding: 0;
-      font-family: 'Merriweather', serif;
+      font-family: 'Tillana', cursive;
     }
 
     *, *:before, *:after {
@@ -22,6 +24,9 @@
     a {
       text-decoration: none;
       color: ;
+    }
+    strong {
+      font-weight: 600;
     }
     body {
       background-color: #eee;
@@ -42,9 +47,14 @@
     nav a {
       margin-right: 10px;
     }
-
+    h1 {
+      font-weight: 800;
+      font-size: 25px;
+    }
     h2 {
-      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 35px;
+      margin-bottom: 5px;
     }
     ul {
       margin-left: 20px;
