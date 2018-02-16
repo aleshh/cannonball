@@ -13,6 +13,8 @@
 
 use Cannonball\Beverage;
 
+Route::redirect('/', 'beverages');
+
 Route::get('/beverages', function () {
 
     // $beverages = DB::table('beverages')->get();
