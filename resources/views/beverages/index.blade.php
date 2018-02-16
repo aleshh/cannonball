@@ -16,4 +16,6 @@
     @endforeach
 </ul>
 
+<p><a href="beverages/create">Add a beverage</a></p>
+
 @endsection

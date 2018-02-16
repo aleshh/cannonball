@@ -15,24 +15,13 @@ use Cannonball\Beverage;
 
 Route::redirect('/', 'beverages');
 
-Route::get('/beverages', function () {
+Route::get('beverages', 'BeveragesController@index');
+Route::get('beverages/{beverage}', 'BeveragesController@show');
+// Route::get('beverages/create', 'BeveragesController@create');
 
-    // $beverages = DB::table('beverages')->get();
-
-    $beverages = Beverage::all();
-
-    return view('beverages.index', compact('beverages'));
+Route::get('/beverages/create', function() {
+    return view('about');
 });
-
-Route::get('beverages/{id}', function($id){
-
-    // $beverage = DB::table('beverages')->find($id);
-
-    $beverage = Beverage::find($id);
-
-    return view('beverages.show', compact('beverage'));
-});
-
 Route::get('about', function() {
     return view('about');
 });
