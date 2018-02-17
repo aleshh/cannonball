@@ -33,23 +33,30 @@
       color: 333;
     }
     header, main {
-      padding: 25px;
+      padding: 10px 25px;
     }
     header {
       position: fixed;
       top: 0;
       width: 100%;
       border-bottom: 1px solid #999;
+      background-color: #eee;
+      opacity: .98;
     }
     main {
-      margin-top: 111px;
+      margin-top: 68px;
+    }
+    nav {
+      display: inline;
     }
     nav a {
       margin-right: 10px;
     }
-    h1 {
+    header h1 {
+      display: inline;
       font-weight: 800;
       font-size: 25px;
+      margin-right: 10px;
     }
     h2 {
       font-weight: 600;
