@@ -28,7 +28,7 @@
   }
 </style>
 
-<form method="POST" action="/posts" >
+<form method="POST" action="/beverages" >
 
   {{ csrf_field() }}
 

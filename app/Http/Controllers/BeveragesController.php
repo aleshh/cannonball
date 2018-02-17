@@ -23,7 +23,6 @@ class BeveragesController extends Controller
     public function store() {
 
         dd(request()->all());
-        printf('beveragesController::store');
         return view('about');
     }
 }
