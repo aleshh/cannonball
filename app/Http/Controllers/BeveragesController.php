@@ -17,7 +17,6 @@ class BeveragesController extends Controller
     }
 
     public function create() {
-        return view('about');
         return view('beverages.create');
     }
 }
