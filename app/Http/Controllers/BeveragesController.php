@@ -22,7 +22,16 @@ class BeveragesController extends Controller
 
     public function store() {
 
-        dd(request()->all());
-        return view('about');
+        // dd(request(['name', 'size']));
+
+        $beverage = new Beverage;
+        $beverage->name = request('name');
+        $beverage->category = request('category');
+        $beverage->size = request('size');
+        $beverage->strength = request('strength');
+
+        $beverage->save();
+
+        return redirect('/');
     }
 }
