@@ -22,15 +22,14 @@ class BeveragesController extends Controller
 
     public function store() {
 
-        // dd(request(['name', 'size']));
+        // $beverage = new Beverage;
+        // $beverage->name = request('name');
+        // $beverage->category = request('category');
+        // $beverage->size = request('size');
+        // $beverage->strength = request('strength');
+        // $beverage->save();
 
-        $beverage = new Beverage;
-        $beverage->name = request('name');
-        $beverage->category = request('category');
-        $beverage->size = request('size');
-        $beverage->strength = request('strength');
-
-        $beverage->save();
+        Beverage::create(request(['name', 'category', 'size', 'strength']));
 
         return redirect('/');
     }

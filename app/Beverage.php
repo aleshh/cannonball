@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Beverage extends Model
 {
-    // public function alcoholAmount() {
-
-    //     return static::where('id', '1')->get();
-    // }
+    // these two lines do the same thing:
+    protected $fillable = ['name', 'category', 'size', 'strength'];
+    protected $guarded = [];
 }
