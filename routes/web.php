@@ -15,9 +15,11 @@ use Cannonball\Beverage;
 
 Route::redirect('/', 'beverages');
 
-Route::get('beverages', 'BeveragesController@index');
-// Route::get('beverages/{beverage}', 'BeveragesController@show');
-Route::get('beverages/create', 'BeveragesController@create');
+Route::get('/beverages', 'BeveragesController@index');
+Route::get('/beverages/create', 'BeveragesController@create');
+// Route::get('/beverages/{beverage}', 'BeveragesController@show');
+
+Route::post('/beverages', 'BeveragesController@store');
 
 Route::get('about', function() {
     return view('about');
