@@ -23,7 +23,15 @@ strong {
 
 body {
   background-color: #999;
-  color: 333;
+}
+
+.cragle {
+  z-index: -1;
+  position: absolute;
+  background-color: #eee;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 header,
@@ -36,8 +44,20 @@ header {
   top: 0;
   width: 100%;
   border-bottom: 1px solid #999;
-  background-color: #eee;
+  background-color: #999;
   opacity: .98;
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+header h1 {
+  display: inline;
+  font-weight: 800;
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 main {
@@ -53,13 +73,6 @@ nav a {
   margin-right: 10px;
 }
 
-header h1 {
-  display: inline;
-  font-weight: 800;
-  font-size: 25px;
-  margin-right: 10px;
-}
-
 h2 {
   font-weight: 600;
   font-size: 35px;
@@ -68,14 +81,5 @@ h2 {
 
 ul {
   margin-left: 20px;
-}
-
-.cragle {
-  z-index: -1;
-  position: absolute;
-  background-color: #eee;
-  top: 0;
-  width: 100%;
-  height: 100%;
 }
 
