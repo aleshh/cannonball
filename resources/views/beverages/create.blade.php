@@ -7,7 +7,7 @@
 
 <form method="POST" action="/beverages" >
 
-  {{ csrf_field() }}
+  @csrf
 
   <div class="input-form">
     <label for="name">Name</label>
