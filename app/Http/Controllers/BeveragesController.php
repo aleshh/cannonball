@@ -8,7 +8,9 @@ use Cannonball\Beverage;
 class BeveragesController extends Controller
 {
     public function index() {
-        $beverages = Beverage::all();
+        // $beverages = Beverage::all();
+        // $beverages = Beverage::orderBy('created_at', 'desc')->get();
+        $beverages = Beverage::latest()->get();
         return view('beverages.index', compact('beverages'));
     }
 
@@ -20,7 +22,14 @@ class BeveragesController extends Controller
         return view('beverages.create');
     }
 
-    public function store() {
+    public function store(Request $request) {
+
+        $this->validate($request, [
+            'name' => 'required|unique:beverages',
+            'category' => 'required',
+            'size' => 'required|numeric',
+            'strength' => 'required|numeric'
+        ]);
 
         // $beverage = new Beverage;
         // $beverage->name = request('name');
