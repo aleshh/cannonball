@@ -1,5 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i'); */
 @import url('https://fonts.googleapis.com/css?family=Tillana:400,600,800');
+
+$main-background: #eee;
+$secondary-background: #999;
 
 * {
   margin: 0;
@@ -20,14 +22,14 @@ strong {
 }
 
 body {
-  background-color: #999;
+  background-color: $secondary-background;
 }
 
 // sets a full-width div to hide background body color
 .cragle {
   z-index: -1;
   position: absolute;
-  background-color: #eee;
+  background-color: $main-background;
   top: 0;
   width: 100%;
   height: 100%;
@@ -41,8 +43,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid #999;
-  background-color: #999;
+  background-color: $secondary-background;
   opacity: .98;
   color: white;
 
@@ -60,7 +61,7 @@ header {
 
 main {
   margin-top: 68px;
-  background-color: #eee;
+  background-color: $main-background;
 }
 
 nav {
