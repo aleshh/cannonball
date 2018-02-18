@@ -29,7 +29,7 @@
       font-weight: 600;
     }
     body {
-      background-color: #eee;
+      background-color: #999;
       color: 333;
     }
     header, main {
@@ -45,6 +45,7 @@
     }
     main {
       margin-top: 68px;
+      background-color: #eee;
     }
     nav {
       display: inline;
@@ -66,10 +67,19 @@
     ul {
       margin-left: 20px;
     }
+    .cragle {
+      z-index: -1;
+      position: absolute;
+      background-color: #eee;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 
 </head>
 <body>
+  <div class="cragle"></div>
   <header>
     <h1>Cannonball</h1>
     <nav>
