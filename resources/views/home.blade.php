@@ -5,12 +5,18 @@
 <h2>What ya drinking?</h2>
 
 @foreach ($beverages as $beverage)
-    <a href="beverages/{{$beverage->id}}">
-        <div class="add-serving-button">
+    <form method="POST" action="/servings">
+        @csrf
+        <input type="hidden" name="id" id="id" value="{{ $beverage->id }}">
+
+        <button type="submit" class="add-serving-button">
             <h3>{{ $beverage->name }}</h3>
-            ({{ $beverage->size * $beverage->strength / 100}} oz. of alcohol)
-        </div>
-    </a>
+            ({{ $beverage->size }}oz., {{ $beverage->strength }}%)
+
+        </button>
+
+    </form>
+
 @endforeach
 
 @endsection
