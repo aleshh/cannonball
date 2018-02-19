@@ -7,7 +7,7 @@
 @foreach ($beverages as $beverage)
     <form method="POST" action="/servings">
         @csrf
-        <input type="hidden" name="id" id="id" value="{{ $beverage->id }}">
+        <input type="hidden" name="beverage_id" id="beverage_id" value="{{ $beverage->id }}">
 
         <button type="submit" class="add-serving-button">
             <h3>{{ $beverage->name }}</h3>

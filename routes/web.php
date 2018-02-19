@@ -13,6 +13,8 @@
 
 use Cannonball\Beverage;
 
+Route::redirect('/', '/home');
+
 Route::get('/home', function() {
     $beverages = Beverage::latest()->get();
     return view('home', compact('beverages'));
@@ -25,7 +27,7 @@ Route::post('/beverages', 'BeveragesController@store');
 
 Route::get('/servings', 'ServingsController@index');
 // Route::get('/servings', 'ServingsController@create');
-// Route::get('/servings', 'ServingsController@store');
+Route::post('/servings', 'ServingsController@store');
 // Route::get('/servings', 'ServingsController@show');
 // Route::get('/servings', 'ServingsController@edit');
 // Route::get('/servings', 'ServingsController@destroy');

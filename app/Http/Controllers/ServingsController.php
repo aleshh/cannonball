@@ -36,7 +36,8 @@ class ServingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Serving::create(request(['beverage_id']));
+        return redirect('/');
     }
 
     /**
