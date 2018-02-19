@@ -13,11 +13,10 @@
 
 use Cannonball\Beverage;
 
-Route::view('/blah', 'home');
-
-// Route::get('/', function() {
-//     return view('home');
-// });
+Route::get('/home', function() {
+    $beverages = Beverage::latest()->get();
+    return view('home', compact('beverages'));
+});
 
 Route::get('/beverages', 'BeveragesController@index');
 Route::get('/beverages/create', 'BeveragesController@create');

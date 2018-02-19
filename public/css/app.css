@@ -109,3 +109,15 @@ ul {
   margin-top: 10px;
 }
 
+/*
+ *  home screen buttons
+ */
+
+.add-serving-button {
+  border: 1px solid #4e4e4e;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  background-color: #e8e8e8;
+}
+
