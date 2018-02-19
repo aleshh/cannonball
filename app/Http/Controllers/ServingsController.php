@@ -5,7 +5,7 @@ namespace Cannonball\Http\Controllers;
 use Cannonball\Serving;
 use Illuminate\Http\Request;
 
-class ServingController extends Controller
+class ServingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class ServingController extends Controller
      */
     public function index()
     {
-        //
+        $servings = Serving::all();
+        return view('servings.index', compact('servings'));
     }
 
     /**

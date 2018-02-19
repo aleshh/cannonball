@@ -14,6 +14,7 @@
     <h1>Cannonball</h1>
     <nav>
       <a href="/beverages">Beverages</a>
+      <a href="/servings">Servings</a>
       <a href="/about">About</a>
     </nav>
   </header>

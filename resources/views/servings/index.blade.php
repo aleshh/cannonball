@@ -7,9 +7,12 @@
 
   @foreach ($servings as $serving)
 
+    <div class="show-serving">
+      Serving:
+      {{ $serving->beverage->id }}
+    </div>
 
   @endforeach
 
-  <p><a href="beverages/create">Add a beverage</a></p>
 
 @endsection

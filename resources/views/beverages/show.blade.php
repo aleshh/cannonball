@@ -13,4 +13,10 @@
 
   </p>
 
+  <p>
+    @foreach($beverage->servings as $serving)
+      Serving: {{ $serving->created_at }}
+    @endforeach
+  </p>
+
 @endsection

@@ -18,8 +18,14 @@ Route::redirect('/', 'beverages');
 Route::get('/beverages', 'BeveragesController@index');
 Route::get('/beverages/create', 'BeveragesController@create');
 Route::get('/beverages/{beverage}', 'BeveragesController@show');
-
 Route::post('/beverages', 'BeveragesController@store');
+
+Route::get('/servings', 'ServingsController@index');
+// Route::get('/servings', 'ServingsController@create');
+// Route::get('/servings', 'ServingsController@store');
+// Route::get('/servings', 'ServingsController@show');
+// Route::get('/servings', 'ServingsController@edit');
+// Route::get('/servings', 'ServingsController@destroy');
 
 Route::get('about', function() {
     return view('about');
