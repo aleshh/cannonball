@@ -15,6 +15,7 @@ class CreateServingsTable extends Migration
     {
         Schema::create('servings', function (Blueprint $table) {
             $table->increments('id');
+            $table->ineger('beverage_id');
             $table->timestamps();
         });
     }
