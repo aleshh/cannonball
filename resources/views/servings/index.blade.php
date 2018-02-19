@@ -8,8 +8,8 @@
   @foreach ($servings as $serving)
 
     <div class="show-serving">
-      Serving:
-      {{ $serving }}
+      Serving:<br>
+      {{ $serving->beverage->name }}
       <br>
       {{ $serving->created_at->diffForHumans() }}
     </div>

@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Serving extends Model
 {
     public function beverage() {
-        return $this->belongsTo(Serving::class);
+        return $this->belongsTo(Beverage::class);
     }
 }
