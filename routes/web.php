@@ -13,7 +13,11 @@
 
 use Cannonball\Beverage;
 
-Route::redirect('/', 'beverages');
+Route::view('/blah', 'home');
+
+// Route::get('/', function() {
+//     return view('home');
+// });
 
 Route::get('/beverages', 'BeveragesController@index');
 Route::get('/beverages/create', 'BeveragesController@create');

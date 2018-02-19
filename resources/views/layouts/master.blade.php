@@ -11,7 +11,7 @@
 <body>
   <div class="cragle"></div>
   <header>
-    <h1>Cannonball</h1>
+    <h1><a href="/">Cannonball</a></h1>
     <nav>
       <a href="/beverages">Beverages</a>
       <a href="/servings">Servings</a>
