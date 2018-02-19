@@ -13,9 +13,13 @@
 
   </p>
 
+  @if($beverage->servings->count())
+    <hr>
+    <h3>Servings</h3>
+  @endif
   <p>
     @foreach($beverage->servings as $serving)
-      Serving: {{ $serving->created_at }}
+      Serving: {{ $serving->created_at->diffForHumans() }}
     @endforeach
   </p>
 

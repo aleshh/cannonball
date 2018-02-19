@@ -9,8 +9,11 @@
 
     <div class="show-serving">
       Serving:
-      {{ $serving->beverage->id }}
+      {{ $serving }}
+      <br>
+      {{ $serving->created_at->diffForHumans() }}
     </div>
+    <br>
 
   @endforeach
 
