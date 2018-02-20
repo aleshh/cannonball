@@ -3,6 +3,7 @@
 namespace Cannonball\Http\Controllers;
 
 use Cannonball\Serving;
+use Cannonball\Beverage;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -20,6 +21,11 @@ class ServingsController extends Controller
     public function store(Request $request)
     {
         Serving::create(request(['beverage_id']));
+
+        $beverage = Beverage::find(request('beverage_id'));
+        $beverage->updated_at = Carbon::now();
+        $beverage->save();
+
         return redirect('/');
     }
 
