@@ -16,7 +16,7 @@ use Cannonball\Beverage;
 Route::redirect('/', '/home');
 
 Route::get('/home', function() {
-    $beverages = Beverage::latest()->get();
+    $beverages = Beverage::orderBy('updated_at', 'desc')->get();
     return view('home', compact('beverages'));
 });
 

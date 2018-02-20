@@ -9,7 +9,7 @@ class BeveragesController extends Controller
 {
     public function index() {
         // $beverages = Beverage::all();
-        // $beverages = Beverage::orderBy('created_at', 'desc')->get();
+        // $beverages = Beverage::orderBy('updated_at', 'desc')->get();
         $beverages = Beverage::latest()->get();
         return view('beverages.index', compact('beverages'));
     }
