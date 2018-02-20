@@ -19,4 +19,14 @@
 
 @endforeach
 
+<form>
+    <button class="add-serving-button">
+        <a href="/beverages/create">
+            <h3>New</h3>
+            Add a new beverage
+
+        </a>
+    </button>
+</form>
+
 @endsection
