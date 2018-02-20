@@ -10,7 +10,7 @@ class ServingsController extends Controller
 
     public function index()
     {
-        $servings = Serving::all();
+        $servings = Serving::latest()->get();
         return view('servings.index', compact('servings'));
     }
 
@@ -19,6 +19,5 @@ class ServingsController extends Controller
         Serving::create(request(['beverage_id']));
         return redirect('/');
     }
-
 
 }
