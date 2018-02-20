@@ -11,11 +11,12 @@
 <body>
   <div class="cragle"></div>
   <header>
-    <h1><a href="/home">Cannonball</a></h1>
+    <!-- <h1><a href="/home">Cannonball</a></h1> -->
     <nav>
+      <a href="/home">Drink!</a>
+      <a href="/servings">Today</a>
       <a href="/beverages">Beverages</a>
-      <a href="/servings">Servings</a>
-      <a href="/about">About</a>
+      <!-- <a href="/about">About</a> -->
     </nav>
   </header>
 
