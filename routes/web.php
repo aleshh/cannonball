@@ -19,7 +19,8 @@ Route::redirect('/', '/home');
 Route::get('/home', function() {
     $beverages = Beverage::orderBy('updated_at', 'desc')->get();
     $servingsCount = Serving::todayCount();
-    return view('home', compact('beverages', 'servingsCount'));
+    $todayAlcohol = Serving::todayAlcohol();
+    return view('home', compact('beverages', 'servingsCount', 'todayAlcohol'));
 });
 
 Route::get('/beverages', 'BeveragesController@index');

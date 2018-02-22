@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="servings-status">
-{{ $servingsCount }} drinks so far today
+{{ $servingsCount }} drinks so far today, {{ $todayAlcohol }} oz. of alcohol
 </div>
 
 <h2>What ya drinking?</h2>
