@@ -12,12 +12,14 @@
 */
 
 use Cannonball\Beverage;
+use Cannonball\Serving;
 
 Route::redirect('/', '/home');
 
 Route::get('/home', function() {
     $beverages = Beverage::orderBy('updated_at', 'desc')->get();
-    return view('home', compact('beverages'));
+    $servingsCount = Serving::todayCount();
+    return view('home', compact('beverages', 'servingsCount'));
 });
 
 Route::get('/beverages', 'BeveragesController@index');

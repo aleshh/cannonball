@@ -2,6 +2,10 @@
 
 @section('content')
 
+<div class="servings-status">
+{{ $servingsCount }} drinks so far today
+</div>
+
 <h2>What ya drinking?</h2>
 
 @foreach ($beverages as $beverage)
