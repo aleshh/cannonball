@@ -16,6 +16,7 @@
       <nav>
         <a href="/home">Drink!</a>
         <a href="/servings">Today</a>
+        <div class="cannon">C</div>
         <a href="/beverages">Beverages</a>
         <a href="/about">About</a>
       </nav>
