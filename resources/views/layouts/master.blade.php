@@ -6,22 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cannonball</title>
 
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <div class="cragle"></div>
   <header>
-    <!-- <h1><a href="/home">Cannonball</a></h1> -->
-    <nav>
-      <a href="/home">Drink!</a>
-      <a href="/servings">Today</a>
-      <a href="/beverages">Beverages</a>
-      <!-- <a href="/about">About</a> -->
-    </nav>
+    <div class="container">
+      <!-- <h1><a href="/home">Cannonball</a></h1> -->
+      <nav>
+        <a href="/home">Drink!</a>
+        <a href="/servings">Today</a>
+        <a href="/beverages">Beverages</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    @yield('content')
+    <div class="container">
+      @yield('content')
+    </div>
   </main>
 
 

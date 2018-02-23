@@ -2,9 +2,11 @@
 
 @section('content')
 
-<div class="servings-status">
-{{ $servingsCount }} drinks so far today, {{ $todayAlcohol }} oz. of alcohol
-</div>
+@if($servingsCount > 0)
+    <div class="servings-status">
+    {{ $servingsCount }} drinks so far today, {{ $todayAlcohol }} oz. of alcohol
+    </div>
+@endif
 
 <h2>What ya drinking?</h2>
 
@@ -24,13 +26,13 @@
 @endforeach
 
 <form>
-    <button class="add-serving-button">
-        <a href="/beverages/create">
+    <!-- <button class="add-serving-button"> -->
+        <a href="/beverages/create" class="add-serving-button">
             <h3>New</h3>
             Add a new beverage
 
         </a>
     </button>
-</form>
+<!-- </form> -->
 
 @endsection

@@ -42,6 +42,11 @@ body {
   height: 100%;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
 header, main {
   padding: 10px 25px;
 }
@@ -124,6 +129,9 @@ ul {
  */
 
  .add-serving-button {
+  display: block;
+  width: 100%;
+  text-align: center;
   border: 1px solid rgb(78, 78, 78);
   border-radius: 5px;
   margin-bottom: 15px;
